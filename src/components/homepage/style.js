@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Profile from './../../assets/osh-homepage.jpg'
+import ProfileVideo from './../../assets/v1.mp4'
 import { isMobile } from 'react-device-detect';
 
 export const FullPage = styled.div`
@@ -10,6 +10,7 @@ export const FullPage = styled.div`
     background-color: black;
     width: 100vw;
     height: 100vh;
+    position: fixed;
 `;
 
 export const Title = styled.h1`
@@ -20,15 +21,17 @@ export const Title = styled.h1`
 export const SubTitle = styled.h1`
     font-size: 25px;
     color: white;
+    margin: 0;
     
 `;
 
-export const HomePageImage = styled.div`
-    height: ${isMobile ? '300px' : '500px'};
-    width: ${isMobile ? '300px' : '500px'};
-    background: url(${Profile}) no-repeat center;
+export const HomePageVideo = styled.video`
+    height: ${isMobile ? '350px' : '400px'};
+    width: ${isMobile ? '75%' : '25%'};
+    background:  url(${ProfileVideo});
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    border-radius: 10px;
 `;

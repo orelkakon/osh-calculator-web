@@ -1,12 +1,12 @@
 import React from 'react';
-import { FullPage, Title, HomePageImage, SubTitle } from './style'
+import { FullPage, Title, HomePageVideo, SubTitle } from './style'
 
 const HomePage = () => {
     return (
         <FullPage>
             <Title>OSH.</Title>
             <SubTitle>Oshri Ben David <br /> Fitness & Nutritions</SubTitle>
-            <HomePageImage />
+            <HomePageVideo autoplay muted loop />
         </FullPage>
     );
 };
