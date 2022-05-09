@@ -7,7 +7,7 @@ export const FullPage = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: black;
+    background: linear-gradient(to top, black 0%, gray 100%);
     width: 100vw;
     height: 100vh;
     position: fixed;
