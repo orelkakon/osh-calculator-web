@@ -1,12 +1,20 @@
 import React from 'react';
-import { FullPage, Title, HomePageVideo, SubTitle } from './style'
+import { FullPage, Title, SubTitle } from './style'
+import "./style.css"
+import ProfileVideo from './../../assets/v1.mp4'
+import { isMobile } from 'react-device-detect';
 
 const HomePage = () => {
     return (
         <FullPage>
             <Title>OSH.</Title>
             <SubTitle>Oshri Ben David <br /> Fitness & Nutritions</SubTitle>
-            <HomePageVideo autoplay muted loop />
+            {
+                isMobile ?
+                <video className="homepage-video" src={ProfileVideo} autoPlay muted loop />
+                :
+                <video className="homepage-video" src={ProfileVideo} autoPlay muted loop />
+            }
         </FullPage>
     );
 };

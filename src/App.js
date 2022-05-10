@@ -1,6 +1,6 @@
 import React from 'react';
 import HomePage from "./components/homepage/index"
-import About from "./components/about/index"
+import Details from "./components/details/index"
 import Dairy from "./components/dairy/index"
 import Inventory from "./components/inventory/index"
 import Menu from './components/homepage/bottom-bar/index'
@@ -19,8 +19,8 @@ const App = () => {
         <Route path="/inventory" element={
           <Inventory />
         } />
-        <Route path="/about" element={
-          <About />
+        <Route path="/details" element={
+          <Details />
         } />
       </Routes>
       <Menu />

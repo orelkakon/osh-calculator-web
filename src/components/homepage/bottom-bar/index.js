@@ -14,7 +14,7 @@ const Menu = () => {
                 <MenuTitle>תפריט</MenuTitle>
             </MenuOption>
             <MenuOption>
-                <MenuButton image={dairy} onClick={() => navigate("dairy")} />
+                <MenuButton image={dairy} onClick={() => navigate("/dairy")} />
                 <MenuTitle>יומן</MenuTitle>
             </MenuOption>
             <MenuOption>
