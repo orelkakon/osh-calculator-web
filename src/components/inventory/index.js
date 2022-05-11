@@ -1,10 +1,11 @@
 import React from 'react';
+import { FullPage } from "./style"
 
 const Inventory = () => {
     return (
-        <div>
-            
-        </div>
+        <FullPage>
+
+        </FullPage>
     );
 };
 

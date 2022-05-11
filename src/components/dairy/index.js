@@ -1,10 +1,11 @@
 import React from 'react';
+import { FullPage } from "./style"
 
 const Dairy = () => {
     return (
-        <div>
-            
-        </div>
+        <FullPage>
+
+        </FullPage>
     );
 };
 

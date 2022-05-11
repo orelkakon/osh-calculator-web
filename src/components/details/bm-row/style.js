@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const RowDiv = styled.div`
+export const BmRowDiv = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -21,7 +21,7 @@ export const Title = styled.p`
     padding-right: 5px;
 `;
 
-export const Unit = styled.p`
+export const Value = styled.p`
     font-weight: bold;
     font-size: x-large;
     color: black;

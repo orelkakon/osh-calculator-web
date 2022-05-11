@@ -1,12 +1,13 @@
 import React from 'react';
+import { GenderDiv, GenderButton } from "./style"
 
-const GenderButton = () => {
+const Gender = ({value, changer}) => {
     return (
-        <div>
-            <button>זכר</button>
-            <button>נקבה</button>
-        </div>
+        <GenderDiv>
+            <GenderButton side={"R"} clicked={value === "זכר" ? true : false} onClick={() => changer("זכר")}>זכר</GenderButton>
+            <GenderButton side={"L"} clicked={value === "נקבה" ? true : false} onClick={() => changer("נקבה")}>נקבה</GenderButton>
+        </GenderDiv>
     );
 };
 
-export default GenderButton;
+export default Gender;

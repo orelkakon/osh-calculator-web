@@ -1,6 +1,6 @@
 import React from 'react';
 import PlusMinus from './plus-minus';
-import GenderButton from './gender-button';
+import Gender from './gender-button';
 import { RowDiv, Title, Unit } from "./style"
 
 export const DetailRow = ({ title, unit, value, changer }) => {
@@ -9,10 +9,13 @@ export const DetailRow = ({ title, unit, value, changer }) => {
             <Title>{title}</Title>
             {
                 title === "מין" ?
-                <GenderButton />:
-                <PlusMinus />
+                    <Gender value={value} changer={changer} /> :
+                    <PlusMinus value={value} changer={changer} />
             }
-            <Unit>{value + `${unit ? ` ${unit}` : ''}`}</Unit>
+            {
+                title !== "מין" &&
+                <Unit>{value + `${unit ? ` ${unit}` : ''}`}</Unit>
+            }
 
         </RowDiv>
     );

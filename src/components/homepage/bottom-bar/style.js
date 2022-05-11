@@ -8,7 +8,7 @@ export const FullMenu = styled.div`
     justify-content: space-around;
     text-align: center;
     width: 100vw;
-    height: ${isMobile ? `80px` : `120px`};
+    height: ${isMobile ? `90px` : `130px`};
     background: linear-gradient(to top, white 0%, gray 100%);;
     bottom: 0;
     position: fixed;
@@ -36,5 +36,5 @@ export const MenuTitle = styled.p`
     font-weight: bold;
     color: black;
     margin: 0;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
 `;
