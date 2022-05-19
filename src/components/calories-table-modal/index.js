@@ -32,7 +32,7 @@ const CaloriesTableModal = ({ closeModal }) => {
                     <TD color="black">{amounts[3]} קל'</TD>
                 </TR>
             </Table>
-            <PieChartCPF percentage={percentage}/>
+            <PieChartCPF percentage={percentage} height={['100%','14%']} width={['100%', '14%']} margin={['10px','10px']}/>
         </FullPage>
     );
 };

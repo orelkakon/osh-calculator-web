@@ -5,8 +5,8 @@ export const FullPage = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: ${isMobile ? '10px' : '10px'};
-    width: ${isMobile ? '100%' : '14%'};
-    height: ${isMobile ? '100%' : '14%'};
+    margin: ${props => `${isMobile ? props.margin[0] : props.margin[1]}`};
+    height: ${props => `${isMobile ? props.height[0] : props.height[1]}`};
+    width: ${props => `${isMobile ? props.width[0] : props.width[1]}`};
     font-size: small;
 `;

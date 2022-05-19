@@ -11,6 +11,7 @@ export const myDayList = (state = todayValues, action) => {
                     fats: action.payload.fats,
                     grams: action.payload.grams,
                     calories: action.payload.calories,
+                    kind: action.payload.kind,
                 }
             ]
         case "UPDATE_ITEM_ON_LIST":
@@ -19,7 +20,8 @@ export const myDayList = (state = todayValues, action) => {
                 proteins: action.payload.proteins,
                 fats: action.payload.fats,
                 grams: action.payload.grams,
-                calories: action.payload.calories
+                calories: action.payload.calories,
+                kind: action.payload.kind
             } : item)
         case "REMOVE_ITEM_FROM_LIST":
             return state.filter(item => item.name !== action.payload.name)

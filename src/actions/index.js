@@ -1,4 +1,4 @@
-export const actionAddItem = (name, carbs, proteins, fats, grams, calories) => {
+export const actionAddItem = (name, carbs, proteins, fats, grams, calories, kind) => {
     return ({
         type: "ADD_ITEM_TO_LIST",
         payload: {
@@ -7,12 +7,13 @@ export const actionAddItem = (name, carbs, proteins, fats, grams, calories) => {
             proteins,
             fats,
             grams,
-            calories
+            calories,
+            kind
         }
     })
 }
 
-export const actionUpdateItem = (name, carbs, proteins, fats, grams, calories) => {
+export const actionUpdateItem = (name, carbs, proteins, fats, grams, calories, kind) => {
     return ({
         type: "UPDATE_ITEM_ON_LIST",
         payload: {
@@ -21,7 +22,8 @@ export const actionUpdateItem = (name, carbs, proteins, fats, grams, calories) =
             proteins,
             fats,
             grams,
-            calories
+            calories,
+            kind
         }
     })
 }
