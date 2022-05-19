@@ -11,9 +11,9 @@ const HomePage = () => {
             <SubTitle>Oshri Ben David <br /> Fitness & Nutritions</SubTitle>
             {
                 isMobile ?
-                <video className="homepage-video" src={ProfileVideo} autoPlay muted loop controls={false}/>
+                <video className="homepage-video" src={ProfileVideo} muted loop playsInline autoPlay={true} controls={false} preload='auto' type='video/mp4' />
                 :
-                <video className="homepage-video" src={ProfileVideo} autoPlay muted loop controls={false}/>
+                <video className="homepage-video" src={ProfileVideo} autoPlay loop muted controls={false}/>
             }
         </FullPage>
     );

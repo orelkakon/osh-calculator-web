@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import ProfileVideo from './../../assets/v1.mp4'
 
 export const FullPage = styled.div`
     display: flex;
@@ -20,5 +21,4 @@ export const SubTitle = styled.h1`
     font-size: 25px;
     color: white;
     margin: 0;
-    
 `;
