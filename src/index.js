@@ -12,11 +12,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 const store = createStore(myDayList);
 
 store.dispatch(actionAddItem(
-  "AAAAA", 20, 10, 5, 100, 200
+  "AAAAA", 20, 10, 5, 100, 200, 'byGrams'
 ))
 
 store.dispatch(actionAddItem(
-  "BBBBB", 10, 40, 15, 150, 300
+  "BBBBB", 10, 40, 15, 150, 300, 'byUnits'
 ))
 root.render(
   <React.StrictMode>

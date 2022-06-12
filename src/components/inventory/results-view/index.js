@@ -2,7 +2,9 @@ import React from 'react';
 import { FullPage } from "./style"
 import ResultView from "./result-view"
 
-const ResultsView = ({results}) => {
+
+
+const ResultsView = ({ results }) => {
     return (
         <FullPage>
             {

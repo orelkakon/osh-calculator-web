@@ -14,7 +14,8 @@ const Inventory = () => {
         fats: 10,
         grams: 100,
         kind: "יחידה",
-        calories: 200
+        calories: 200,
+        type: "byUnits"
     },
     {
         name: "דג מושט",
@@ -23,7 +24,8 @@ const Inventory = () => {
         fats: 5,
         grams: 300,
         kind: "יחידה",
-        calories: 500
+        calories: 500,
+        type: "byUnits"
     },
     {
         name: "טונה בשמן טעמן",
@@ -32,7 +34,8 @@ const Inventory = () => {
         fats: 5,
         grams: 300,
         kind: "יחידה",
-        calories: 500
+        calories: 500,
+        type: "byGrams"
     },
     {
         name: "לחם חום",
@@ -41,70 +44,8 @@ const Inventory = () => {
         fats: 5,
         grams: 300,
         kind: "כף",
-        calories: 500
-    },
-    {
-        name: "פרכיות פתית",
-        carbs: 10,
-        proteins: 35,
-        fats: 5,
-        grams: 300,
-        kind: "100 גרם",
-        calories: 225
-    },
-    {
-        name: "פרכיות פתית",
-        carbs: 10,
-        proteins: 35,
-        fats: 5,
-        grams: 300,
-        kind: "100 גרם",
-        calories: 225
-    },
-    {
-        name: "פרכיות פתית",
-        carbs: 10,
-        proteins: 35,
-        fats: 5,
-        grams: 300,
-        kind: "100 גרם",
-        calories: 225
-    },
-    {
-        name: "פרכיות פתית",
-        carbs: 10,
-        proteins: 35,
-        fats: 5,
-        grams: 300,
-        kind: "100 גרם",
-        calories: 225
-    },
-    {
-        name: "פרכיות פתית",
-        carbs: 10,
-        proteins: 35,
-        fats: 5,
-        grams: 300,
-        kind: "100 גרם",
-        calories: 225
-    },
-    {
-        name: "פרכיות פתית",
-        carbs: 10,
-        proteins: 35,
-        fats: 5,
-        grams: 300,
-        kind: "100 גרם",
-        calories: 225
-    },
-    {
-        name: "פרכיות פתית",
-        carbs: 10,
-        proteins: 35,
-        fats: 5,
-        grams: 300,
-        kind: "100 גרם",
-        calories: 225
+        calories: 500,
+        type: "byGrams"
     }]);
     const openCloseModal = () => setIsOpen(!modalIsOpen)
     return (

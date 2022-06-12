@@ -18,3 +18,27 @@ export const getPercentage = (amounts) => {
     const fatsPer = (amounts[2] * 9 / amounts[3]) * 100
     return [carbsPer, proteinsPer, fatsPer]
 }
+
+export const calculateCalories = (type, weight, calories) => {
+    if (type === 'byGrams') {
+        return Math.round((weight / 100) * calories)
+    } else { // === 'units'
+        return Math.round(weight * calories)
+    }
+}
+
+export const calculateWeight = (type, weight, item) => {
+    if (type === 'byGrams') {
+        return weight
+    } else { // === 'units'
+        return Math.round(weight * item)
+    }
+}
+
+export const calculateGrams = (type, weight, item) => {
+    if (type === 'byGrams') {
+        return Math.round((weight / 100) * item)
+    } else { // === 'units'
+        return Math.round(weight * item)
+    }
+}
