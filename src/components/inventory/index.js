@@ -5,7 +5,6 @@ import SearchBar from "./search-bar"
 import ResultsView from "./results-view"
 
 const Inventory = () => {
-    const [modalIsOpen, setIsOpen] = useState(false);
     const [filterdResults, setFilterdResults] = useState([]);
     const [results, setResults] = useState([{
         name: "פרגיות צלוי",
@@ -47,7 +46,6 @@ const Inventory = () => {
         calories: 500,
         type: "byGrams"
     }]);
-    const openCloseModal = () => setIsOpen(!modalIsOpen)
     return (
         <FullPage>
             <Square>
@@ -55,7 +53,7 @@ const Inventory = () => {
                 <SquareContent color="green">פחמימה</SquareContent>
                 <SquareContent color="red">שומן</SquareContent>
             </Square>
-            <CaloriesCircle openCloseModal={openCloseModal} modalIsOpen={modalIsOpen} />
+            <CaloriesCircle />
             <SearchBar results={results} setFilterdResults={setFilterdResults}/>
             <ResultsView results={filterdResults} />
         </FullPage>

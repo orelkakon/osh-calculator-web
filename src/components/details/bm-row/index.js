@@ -1,11 +1,11 @@
 import React from 'react';
 import { BmRowDiv, Title, Value } from './style'
 
-const BmRow = ({title, func}) => {
+const BmRow = ({ title, calculateValue }) => {
     return (
         <BmRowDiv>
             <Title>{title}</Title>
-            <Value>{func()}</Value>
+            <Value>{calculateValue}</Value>
         </BmRowDiv>
     );
 };

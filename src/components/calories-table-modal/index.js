@@ -4,10 +4,11 @@ import { useSelector } from 'react-redux';
 import { getAmounts, getPercentage } from "./../../utils/index"
 import PieChartCPF from "./../pie-chart-today-values"
 
-const CaloriesTableModal = ({ closeModal }) => {
+const CaloriesTableModal = () => {
     const myDayList = useSelector(state => state);
     const amounts = getAmounts(myDayList)
     const percentage = getPercentage(amounts)
+    
     return (
         <FullPage>
             <Table>

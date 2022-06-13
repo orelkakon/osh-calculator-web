@@ -18,6 +18,7 @@ export const Table = styled.table`
 `;
 
 export const TR = styled.tr`
+
 `;
 
 export const TD = styled.td`

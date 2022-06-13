@@ -3,17 +3,18 @@ import PlusMinus from './plus-minus';
 import Gender from './gender-button';
 import { RowDiv, Title, Unit } from "./style"
 
-export const DetailRow = ({ title, unit, value, changer }) => {
+export const DetailRow = ({ title, unit, value, setter }) => {
+    const GENDER = "מין"
     return (
         <RowDiv>
             <Title>{title}</Title>
             {
-                title === "מין" ?
-                    <Gender value={value} changer={changer} /> :
-                    <PlusMinus value={value} changer={changer} />
+                title === GENDER ?
+                    <Gender value={value} setter={setter} /> :
+                    <PlusMinus value={value} setter={setter} />
             }
             {
-                title !== "מין" &&
+                title !== GENDER &&
                 <Unit>{value + `${unit ? ` ${unit}` : ''}`}</Unit>
             }
 

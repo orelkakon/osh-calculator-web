@@ -1,32 +1,19 @@
-import React from 'react';
-import { Icon, Count } from "./style"
+import React, {useState} from 'react';
+import { Icon, Count, CaloriesCircleModal } from "./style"
 import Modal from 'react-modal';
 import CaloriesTableModal from "./../calories-table-modal"
 import { useSelector } from 'react-redux';
 import { getAmounts } from "./../../utils/index"
 
-const customStyles = {
-    content: {
-        top: '40%',
-        left: '50%',
-        right: 'auto',
-        bottom: 'auto',
-        width: '85%',
-        height: '40%',
-        marginRight: '-50%',
-        transform: 'translate(-50%, -50%)',
-        backgroundColor: 'gray',
-        color: 'white',
-    },
-};
-
-const CaloriesCircle = ({ openCloseModal, modalIsOpen }) => {
+const CaloriesCircle = () => {
+    const [modalIsOpen, setIsOpen] = useState(false);
+    const openCloseModal = () => setIsOpen(!modalIsOpen)
     const myDayList = useSelector(state => state);
     const amounts = getAmounts(myDayList)
     const counter = amounts[3]
     return (
         <>
-            <Icon onClick={() => openCloseModal()}>
+            <Icon onClick={openCloseModal}>
                 <Count>
                     {counter}
                 </Count>
@@ -34,7 +21,7 @@ const CaloriesCircle = ({ openCloseModal, modalIsOpen }) => {
             <Modal
                 isOpen={modalIsOpen}
                 onRequestClose={openCloseModal}
-                style={customStyles}
+                style={CaloriesCircleModal}
                 ariaHideApp={false}
                 contentLabel="calories modal"
             >
