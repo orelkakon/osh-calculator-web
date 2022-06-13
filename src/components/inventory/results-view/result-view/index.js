@@ -13,7 +13,7 @@ const customStyles = {
         right: 'auto',
         bottom: 'auto',
         width: '85%',
-        height: isMobile ? '55%' : '65%',
+        height: isMobile ? '45%' : '65%',
         marginRight: '-50%',
         transform: 'translate(-50%, -50%)',
         backgroundColor: 'gray',
